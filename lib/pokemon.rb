@@ -16,7 +16,7 @@ class Pokemon
  
  def self.find(id, db)
    pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?", id);
-   p_keys = {:id =>[0][0]}
+   p_keys = {:id =>[0][0], :name =>[0][1], :type =>[0][2], :db => db}
    binding.pry
    
  end
