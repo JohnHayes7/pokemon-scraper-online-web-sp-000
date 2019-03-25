@@ -4,12 +4,13 @@ class Pokemon
   @@all = []
   
  def initialize(keys)
+   binding.pry
   values = []
   keys.each do |k, v|
   values << v 
   end
    self.save(values[0], values[1], values[2], values[3])
-  binding.pry
+  
  end
  
  def self.save(id, name, type, db)
