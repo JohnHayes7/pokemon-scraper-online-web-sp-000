@@ -20,9 +20,6 @@ class Pokemon
    n_poke.id = [0][0]
    n_poke.name = [0][1]
    n_poke.type = [0][2]
-   
-   binding.pry
-   
  end
  
 end
