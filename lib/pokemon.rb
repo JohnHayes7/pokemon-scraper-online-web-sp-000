@@ -20,6 +20,6 @@ class Pokemon
    self.new(p_keys)
  end
  
- def 
+ def alter_hp
  
 end
