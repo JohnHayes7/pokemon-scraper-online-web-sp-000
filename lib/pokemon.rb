@@ -17,10 +17,6 @@ class Pokemon
  def self.find(id, db)
    pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?", id);
    n_poke = self.new(pokemon)
-   binding.pry
-   n_poke.id = [0][0]
-   n_poke.name = [0][1]
-   n_poke.type = [0][2]
    
  end
  
