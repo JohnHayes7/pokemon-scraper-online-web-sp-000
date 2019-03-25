@@ -20,4 +20,6 @@ class Pokemon
    self.new(p_keys)
  end
  
+ def 
+ 
 end
