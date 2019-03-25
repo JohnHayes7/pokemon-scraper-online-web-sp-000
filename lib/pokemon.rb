@@ -15,12 +15,8 @@ class Pokemon
  
  def self.find(id, db)
    pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?", id);
-   p_keys = {:id =>pokemon[0][0], :name =>pokemon[0][1], :type =>pokemon[0][2], :hp =>[0][3], :db => db}
+   p_keys = {:id =>pokemon[0][0], :name =>pokemon[0][1], :type =>pokemon[0][2], :db => db}
    self.new(p_keys)
  end
  
- def alter_hp(hp_num, db)
-   db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", hp_num, self.id)
-   self.hp = hp_num
- end
 end
