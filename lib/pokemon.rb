@@ -19,6 +19,7 @@ class Pokemon
    n_poke = self.new(pokemon)
    n_poke.id = [0][0]
    n_poke.name = [0][1]
+   n_poke.type = [0][2]
    
    binding.pry
    
