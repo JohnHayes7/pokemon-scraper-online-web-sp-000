@@ -4,7 +4,10 @@ class Pokemon
   @@all = []
   
  def initialize(keys)
-   self.save(values[0], values[1], values[2], values[3])
+   @name = keys[:name]
+   @id = keys[:id]
+   @type = keys[:type]
+   @db = keys[:db]
  end
  
  def self.save(id, name, type, db)
